@@ -1,5 +1,5 @@
 /*!
- * jsSimple v1.0.0
+ * jsSimple v0.0.1
  * www.jssimple.com
  *
  * Copyright (c) Tobin Titus
