@@ -8,7 +8,6 @@
  
 var Event = (function() {
 	"use strict";
-	
 	function add (target, type, listener, capture) {
 		capture = capture || false;
 		if (target.addEventListener) {
@@ -25,10 +24,11 @@ var Event = (function() {
 			type = object.type;
 			listener = object.listener;
 			capture = object.capture;
+			target = object.target;
 		} else {
+			capture = capture || false;
 			target = object;
 		}
-		capture = capture || false;
 		
 		if (target.removeEventListener) {
 			target.removeEventListener(type, listener, capture);
